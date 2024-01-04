@@ -1,0 +1,9 @@
+@use '@angular/material' as mat;
+
+$fgcolor: black;
+$bgcolor: #eceff1;
+$bgcolor2: #{mat.get-color-from-palette(mat.define-palette(mat.$indigo-palette, 400))};;
+$bgitem: white;
+$bgitemheader: silver; 
+$bgitemhover: gainsboro;
+

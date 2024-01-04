@@ -1,0 +1,23 @@
+@import 'variables.scss';
+
+html,
+body {
+    height: 100%;
+    background-color: $bgcolor;
+    color: $fgcolor;
+}
+
+h1,
+h2,
+h3 {
+    color: $fgcolor;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mtx-drawer-container {
+    background-color: $bgcolor2 !important;
+}

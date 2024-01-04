@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // "outDir": "./dist/backend/",
+    "outDir": "./",
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "removeComments": true, 
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./srv",
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "files": [
+    "srv/index.ts"
+  ],
+  "include": [
+    "srv/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src"
+  ]
+}

@@ -1,0 +1,25 @@
+@import '../../../../variables.scss';
+
+.mat-mdc-row:hover {
+    background-color: $bgitemhover;
+    cursor: pointer;
+}
+
+.table-container {
+    margin: 8px;
+    margin-right: 0;
+    background-color: $bgitem;
+}
+
+.loading-shade {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row-is-selected {
+    font-weight: bold;
+}

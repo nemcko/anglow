@@ -1,0 +1,19 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.cli.json",
+  "compilerOptions": {
+    // "outDir": "./dist/cli/",
+    "outDir": "./",
+    "types": []
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "srv"
+  ]
+}

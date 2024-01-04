@@ -1,0 +1,51 @@
+<mat-card>
+    <h1>Detail</h1>
+
+    <div *ngIf="persons.canDeleteRow()||true">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput [disabled]="!persons.canUpdateRow()" [ngModel]="persons.state.selectedRow().name"
+                (ngModelChange)="persons.updateField('name',$event)">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Gender</mat-label>
+            <mat-select [disabled]="!persons.canUpdateRow()" [ngModel]="persons.state.selectedRow().gender"
+                (ngModelChange)="persons.updateField('gender',$event)">
+                <mat-option value="Female">Female</mat-option>
+                <mat-option value="Male">Male</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Company</mat-label>
+            <input matInput [disabled]="!persons.canUpdateRow()" [ngModel]="persons.state.selectedRow().company"
+                (ngModelChange)="persons.updateField('company',$event)">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Age</mat-label>
+            <input matInput [disabled]="!persons.canUpdateRow()" type="number"
+                [ngModel]="persons.state.selectedRow().age" (ngModelChange)="persons.updateField('age',$event)">
+        </mat-form-field>
+
+        <mat-divider></mat-divider>
+
+        <div class="panel">
+            <button mat-icon-button [disabled]="!persons.canDeleteRow()" (click)="deleteDialog()"
+                aria-label="Remove personn">
+                <mat-icon>delete_outline</mat-icon>
+            </button>
+
+            <button mat-icon-button [disabled]="persons.canUpdateRow()" aria-label="New person"
+                (click)="persons.newRecord()">
+                <mat-icon>add_circle_outline</mat-icon>
+            </button>
+
+            <button mat-icon-button [disabled]="!persons.rowDataChanged()" (click)="saveRecord()"
+                aria-label="Save changes">
+                <mat-icon>save</mat-icon>
+            </button>
+
+        </div>
+    </div>
+    <p *ngIf="!persons.canDeleteRow()">By clicking on an item in the persons list, the data about the person
+        will be displayed.</p>
+</mat-card>

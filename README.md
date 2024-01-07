@@ -3,7 +3,7 @@
 ## Development server
 Development TypeScript server designed for fullstack development of applications based on JavaScript. Server consisting of two independent parts, Angular with  [signals](https://angular.io/guide/signals#angular-signals) frontend and NodeJS backend. Npm can start the frondend together or in the case of debugging with the need to restart the frondend and the backend server separately.
 
-Angular transpiles TypeScript files using the Webpack module bundler into ES2022 modules. The backend is transpiled using TypeScript by the tsc compiler into ESNext modules for the NodeJS server. The server's data persistence was ensured by using a lightweight [Lowdb](https://github.com/typicode/lowdb) database.
+Angular transpiles TypeScript files using the Webpack module bundler into ES2022 modules. The backend is transpiled using TypeScript by the tsc compiler into ESNext modules for the NodeJS server. The server's data persistence was ensured by using a lightweight [Lowdb](https://github.com/typicode/lowdb) NoSQL database.
 
 Command `npm run start` starts both frontend and backend servers. The server for the frontend runs at the url http://localhost:4200, the server for the backend listens at localhost:3000. Other commands are available in the scripts section of the package.json file
 

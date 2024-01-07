@@ -1,6 +1,14 @@
 {
   "name": "anglow",
   "version": "0.0.0",
+  "keywords": [
+    "angular",
+    "Angular/Signals",
+    "ngrx",
+    "rxjs",
+    "nodejs",
+    "lowdb"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "concurrently --raw --prefix-colors --kill-others \"npm run dev\" \"npm run cli\" ",

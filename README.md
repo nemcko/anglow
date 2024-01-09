@@ -1,7 +1,7 @@
-# Anglow
+# AngLow (Angular+Lowdb)
 
 ## Development server
-Development TypeScript server designed for fullstack development of applications based on JavaScript. Server consisting of two independent parts, Angular with  [signals](https://angular.io/guide/signals#angular-signals) frontend and NodeJS backend. Npm can start the frondend together or in the case of debugging with the need to restart the frondend and the backend server separately.
+Development TypeScript server designed for fullstack development of applications based on JavaScript. Server consisting of two independent parts, Angular with  [signals](https://angular.io/guide/signals#angular-signals) frontend and NodeJS backend . Npm can start the frondend together or in the case of debugging with the need to restart the frondend and the backend server separately.
 
 Angular transpiles TypeScript files using the Webpack module bundler into ES2022 modules. The backend is transpiled using TypeScript by the tsc compiler into ESNext modules for the NodeJS server. The server's data persistence was ensured by using a lightweight [Lowdb](https://github.com/typicode/lowdb) NoSQL database.
 
